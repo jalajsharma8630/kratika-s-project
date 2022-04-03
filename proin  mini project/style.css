@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #E8E8E8;
+}
+
+nav {
+  background: #ffff;
+  height: 80px;
+  width: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+label.logo {
+  color: #0082e6;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #0082e6;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #0082e6;
+  color: #fff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon {
+  color: #0082e6;
+}
+
+#check {
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  height: 87.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 60%;
+  height: 65vh;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.boxleftside {
+  width: 50%;
+  height: 65vh;
+  background-color: #0082e6;
+  padding: 80px 50px;
+}
+
+.boxrightside {
+  width: 50%;
+  height: 65vh;
+  background-color: #fff;
+  padding: 45px 50px;
+}
+
+.bocontent {
+  padding: 5px 15px;
+}
+
+.pera {
+  font-size: 12px;
+  margin: 5px 0px;
+  color: #fff;
+
+}
+
+.pera2 {
+  font-size: 12px;
+  margin: 5px 10px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 550;
+}
+
+.icondiv {
+  width: 100%;
+  height: 120px;
+  padding-top: 10px;
+  /* background-color: red; */
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #0082e6;
+  margin: 18px 0px;
+}
+
+.searchimg {
+  background-color: #fff;
+  padding: 9px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.searchimg>img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.searchimg2 {
+  background-color: #0082e6;
+  padding: 9px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.searchimg2>img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+
+/* right area code css start  */
+.icons {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.icondata {
+  padding-left: 10px;
+}
+
+.pera3 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1275px) {
+  .box {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 88.5vh;
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .boxleftside {
+    width: 100%;
+    height: auto;
+    background-color: #0082e6;
+    padding: 40px 25px;
+  }
+
+  .boxrightside {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 40px 25px;
+
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    color: #0082e6;
+  }
+
+  a:hover,
+  a.active {
+    background: #0082e6;
+    color: #fff;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .boxleftside {
+    width: 100%;
+    height: auto;
+    background-color: #0082e6;
+    padding: 40px 25px;
+  }
+
+  .boxrightside {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 40px 25px;
+  }
+}
